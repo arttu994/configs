@@ -1,2 +1,8 @@
 server:
   port: 8888
+zuul:
+  routes:
+    some:
+      serviceId: "authentication-service"
+      path: /authenticate/**
+      sensitiveHeaders: Cookie, Set-Cookie
