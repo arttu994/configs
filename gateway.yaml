@@ -6,6 +6,7 @@ zuul:
       serviceId: "authentication-service"
       path: /authenticate/**
       sensitiveHeaders: Cookie, Set-Cookie
+      strip-prefix: true
 eureka:
   client:
     fetch-registry: true
